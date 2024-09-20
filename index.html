@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty's Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Oswald:wght@200..700&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+
+        body {
+            height: 100vh;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #logo {
+            font-family: "Bungee Tint", sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 600px 400px ;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            
+        }
+
+        .image {
+            grid-column: span 3;
+        }
+
+        .image img {
+            height: 600px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        .container .image .text-on-image {
+            position:absolute;
+            width: 400px;
+            height: 500px;
+            margin-left: 100px;  
+            font-size: 20px;
+        }
+
+        .container .image .text-on-image h2 {
+            font-family: "Oswald", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bolder;
+            font-style: normal;
+            font-size: 4rem;
+            margin-bottom: 0;
+        }
+
+        .nodisplay {
+            display: none;
+        }
+
+        .container .image .text-on-image button {
+            height: 40px;
+            width: 150px;
+            border: 0;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+        }
+
+        .second {
+            background-color: #9CA986;
+        }
+        
+        .third {
+            background-color: #808D7C;
+        }
+        
+        .fourth {
+            background-color: #5F6F65;
+        }
+
+        .down-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .down-text p {
+            margin-left: 60px;
+            margin-right: 60px;
+            margin-top: 0;
+        }
+
+        .down-text h3 {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        }
+
+        @media  (max-width: 600px) {
+            body {
+                background-color: #C9DABF;
+            }
+
+            .imagediv {
+              margin-top: 20px;
+              object-fit: none;
+              width: 100% !important;
+              height: ;
+            }
+
+            .nodisplaysec {
+                display: none;
+            }
+
+            .nodisplay {
+                display: inline;
+            }
+            
+
+            .container {
+                display: inline-flex ;
+                flex-direction: column;
+                flex-basis: auto;
+                object-fit: cover;
+                height: auto;
+            }
+
+            .container .image .text-on-image {
+                position: relative;
+                width: auto;
+                margin-left: 0 !important;
+                font-size: 15px;
+                height: auto;
+            }
+
+            .container .image .text-on-image h2 {
+                font-size: 2em;
+            }
+
+            .sm {
+                margin-left: 15px;
+            }
+
+            .down-text p {
+                margin: 50px;
+                margin-top: 0;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="sm" id="logo">
+        <h1>Princess Co</h1>
+    </nav>
+
+    <hr>
+   
+    <div class="container">
+        <div class=" image ">
+            <div class="text-on-image">
+             <h2 class="sm">We help your brand to be recognizable</h2>
+             <P class="sm">Quis autem vel eum iure reprehenderit qui in ea vongmate velit esse quam nihil molestie consequatur</P>
+             <p class="sm">Image from <a href="">freepik</a></p>
+             <button class="sm">LEARN MORE</button>
+            </div>
+
+           <div class="imagediv"><img class="nodisplaysec" src="/coupleimg.jpg" alt=""> <img class="nodisplay" src="/pexels-dhivakaran-s-783200.jpg" alt=""></div> 
+        </div>
+        
+        <div class="down-text second">
+            <h3>Quality Product</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolor est tenetur adipisci iusto sed, aut consequuntur facilis quaerat ipsa, quia temporibus, ut nobis fugit?</p>
+        </div>
+        <div class="down-text third">
+            <h3>Growth strategy</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolor est tenetur adipisci iusto sed, aut consequuntur facilis quaerat ipsa, quia temporibus, ut nobis fugit?</p>
+        </div>
+        <div class="down-text fourth">
+            <h3>Competative Price</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolor est tenetur adipisci iusto sed, aut consequuntur facilis quaerat ipsa, quia temporibus, ut nobis fugit?</p>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
